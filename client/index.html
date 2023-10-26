@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Shawn's Website</title>
+</head>
+
+<body>
+
+    <!-- Main Header -->
+    <header>
+        <!-- Logo and Animation -->
+        <div class="animation" aria-label="Shawn's Hotel Logo">
+            <span class="first">Shawn </span>
+            <span class="slide">
+                <span class="second">hotel</span>
+            </span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">How</a></li>
+                <li><a href="#">To</a></li>
+                <li><a href="#">Code</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Navigation Toggle -->
+        <button class="hamburger-menu" aria-label="Toggle Mobile Navigation">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Introduction -->
+        <section aria-label="Introduction">
+            <h1>Creating meaningful solutions through code.</h1>
+        </section>
+
+        <!-- Coding Editor -->
+        <section class="coding-editor-container" aria-label="Coding Editor">
+            <div class="left">
+                <label for="html-code">HTML</label>
+                <textarea id="html-code" placeholder="Start coding..."></textarea>
+
+                <label for="css-code">CSS</label>
+                <textarea id="css-code" placeholder="Start coding..."></textarea>
+
+                <label for="js-code"><i class="fa-brands fa-js"></i>JavaScript</label>
+                <textarea id="js-code" placeholder="Start coding..."></textarea>
+            </div>
+
+            <div class="right hidden">
+                <label>Output</label>
+                <iframe id="output" title="Code Output"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+
+</html>
