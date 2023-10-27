@@ -3,7 +3,7 @@ const assetsToCache = [
    './index.html',
    './index.css',
    './app.js',
-   // ... any other assets you want to cache
+   // more files if i want
 ];
 
 self.addEventListener('install', (event) => {
