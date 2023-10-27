@@ -1,15 +1,8 @@
 {
-    "builds": [
-      {
-        "src": "client/index.html",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "client/$1"
-      }
+    "rewrites": [
+      { "source": "/assets/(.*)", "destination": "/assets/$1" },
+      { "source": "/(.*).(js|css)", "destination": "/client/$1.$2" },
+      { "source": "/(.*)", "destination": "/client/index.html" }
     ]
   }
   
