@@ -8,7 +8,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/client/$1"
+        "dest": "client/$1"
       }
     ]
   }
